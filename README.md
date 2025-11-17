@@ -64,12 +64,12 @@ A continuación se presenta una tabla con todos los requerimientos de la prueba 
 
 8. Entrgables
 
-| Subtarea                           | Estado               |
-| ---------------------------------- | -------------------- |
-| README documentado                 | ✅ Realizado          |
-| Capturas, GIF o video demostrativo | ⚠️ Pendiente agregar |
-| Respuestas a preguntas finales     | ⚠️ Pendiente         |
-| Subir APK exportado                | ✅ Realizado          |
+| Subtarea                           | Estado              |
+| ---------------------------------- | --------------------|
+| README documentado                 |  Realizado          |
+| Capturas, GIF o video demostrativo |  Realizado          |
+| Respuestas a preguntas finales     |  Realizado          |
+| Subir APK exportado                |  Realizado          |
 
 10. Preguntas Finales
 
@@ -82,13 +82,18 @@ A continuación se presenta una tabla con todos los requerimientos de la prueba 
 
  - Minimizar operaciones de escritura en localStorage, guardando únicamente cuando es necesario
 
- 3. ¿Cómo aseguraste la calidad y mantenibilidad del código?
+3. ¿Cómo aseguraste la calidad y mantenibilidad del código?
 
  - Separación clara por capas: componentes, servicios, modelos y almacenamiento
  - Servicios reutilizables para manejo de tareas, categorías y almacenamiento
+ - Arquitectura limpia y modular, evitando dependencias cruzadas
 
 
 Nota: La prueba originalmente solicitaba configurar el proyecto con Cordova, pero debido a incompatibilidades con las versiones actuales de Android y herramientas modernas de compilación, opte por Capacitor, que es el stack oficial y recomendado por Ionic.
+
+Video Demostrtico TaskMaster:
+
+
 
 
 
