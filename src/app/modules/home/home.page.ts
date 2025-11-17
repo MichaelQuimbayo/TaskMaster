@@ -131,7 +131,7 @@ export class HomePage {
   await modal.present();
 
   const { role } = await modal.onWillDismiss();
-  if (role === 'cancel') {
+  if (role === 'confirm') {
     this.loadTasks(); 
   }
   }
