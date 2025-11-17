@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>{{ titleTask }}</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="cancel()" fill="clear">
+        <ion-icon  slot="start"></ion-icon>
+        Atrás
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="modal-content">
+  <ng-content></ng-content>
+</ion-content>

@@ -1,0 +1,39 @@
+/* Contenedor general del modal */
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 16px;
+}
+
+/* Formulario ocupa todo el espacio disponible */
+.task-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Categorías mejor alineadas */
+.category-buttons {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Botones abajo siempre */
+.button-row {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+  margin-bottom: 28px;
+}
+
+/* Botones con tamaño uniforme */
+.button-row ion-button {
+  flex: 1;
+  height: 48px;
+  font-weight: 700;
+  border-radius: 10px;
+}

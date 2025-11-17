@@ -1,0 +1,42 @@
+ion-card{
+margin-bottom: 12px;
+margin-top: 12px;
+}
+
+
+ion-card-header {
+    display: flex;           /* ya es flex por defecto */
+    flex-direction: row;     /* horizontal */
+    align-items: center;     /* alinea verticalmente */
+    justify-content: space-between; /* evita que se estire al máximo */
+    gap: 8px;                /* separación entre título y chip */
+
+}
+
+.header-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ion-chip {
+    display: inline-flex;   
+    width: auto !important;
+    max-width: fit-content;
+    --padding-start: 6px;
+    --padding-end: 6px;
+    --padding-top: 2px;
+    --padding-bottom: 2px;
+    font-size: 13px;
+    height: auto;
+    min-width: 0;
+    border-radius: 12px;
+}
+
+.toggle{
+    margin-left: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}

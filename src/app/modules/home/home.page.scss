@@ -1,6 +1,5 @@
 #container {
   text-align: center;
-
   position: absolute;
   left: 0;
   right: 0;
@@ -24,4 +23,18 @@
 
 #container a {
   text-decoration: none;
+}
+
+.title-center {
+  text-align: center;
+  width: 100%;
+}
+
+.select-filter{
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
