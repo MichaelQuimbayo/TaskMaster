@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">
+        <ion-icon slot="icon-only" [icon]="arrowBackOutlineIcon"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="title-center">TaskMaster</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+
+  <div class="select-filter">
+    <h1>Mis Categorias</h1>
+  </div>
+  <!-- Componente card, categoria creada -->
+  <app-task-card
+  *ngFor="let c of categories"
+    [title]="c.name"
+    [showToggle]="false"
+    action1Label="Editar"
+    action2Label="Eliminar"
+    (action1)="editCategory(c)"
+    (action2)="deleteCategory(c.id)">
+</app-task-card>
+
+  <!-- Boton inferior derecho -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="dark" (click)="openNewCategoryModal()">
+      <ion-icon [icon]="addIcon"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+
+

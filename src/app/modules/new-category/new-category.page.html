@@ -1,0 +1,24 @@
+<app-task-modal
+  titleTask="{{ categoryToEdit ? 'Editar Categoría' : 'Nueva Categoría' }}"
+  [initialMessage]="initialMessage"
+  (cancelled)="cancel()"
+>
+
+  <div class="modal-body">
+
+    <form class="task-form">
+
+        <ion-item>
+            <ion-input label="Nombre de la categoria" labelPlacement="floating" placeholder="Nombre de la categoría" [(ngModel)]="name" name="name"></ion-input>
+        </ion-item>
+    </form>
+
+  
+    <div class="button-row">
+      <ion-button (click)="cancel()" fill="clear" >Cancelar</ion-button>
+      <ion-button fill="solid" color="primary" (click)="saveCategory()">Guardar</ion-button>
+    </div>
+
+  </div>
+
+</app-task-modal>

@@ -1,0 +1,18 @@
+
+  
+<ion-list class="filter-select" lines="none" color="dark">
+  <ion-item>
+    <ion-select
+      interface="popover"
+      [placeholder]="placeholder"
+      (ionChange)="onChange($event)"
+    > 
+      <ion-select-option
+        *ngFor="let c of categories" [value]="c.id"
+      >
+        {{ c.name }}
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+

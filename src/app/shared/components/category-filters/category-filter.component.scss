@@ -1,0 +1,60 @@
+
+
+
+
+/* Quitar estilo de lista e item para que parezca BOTÓN */
+.filter-select ion-item {
+  --background: transparent;
+  --inner-padding-end: 0;
+  --inner-padding-start: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+  --border-width: 0;
+  --border-radius: 0;
+  --min-height: 0;
+  box-shadow: none !important;
+}
+
+/* === BOTÓN MODERNO === */
+.filter-select ion-select {
+  width: 100%;
+  --background: #2c2c2c;              /* fondo suave tipo botón */
+  --border-radius: 12px;
+  --padding-start: 14px;
+  --padding-end: 14px;
+  --min-height: 46px;                 /* altura estilo botón */
+  --border-color: #c7d2fe;
+  --border-width: 1px;
+  --highlight-color: transparent;
+  --highlight-color-focused: transparent;
+
+  font-size: 16px;
+  color: #ffffff;                     /* texto bonito */
+  font-weight: 600;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: all 0.25s ease;
+}
+
+/* Hover para efecto botón premium */
+.filter-select ion-select:hover {
+  --border-color: #ffffff;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* Texto dentro del select */
+.filter-select ion-select::part(text) {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+/* Ícono (flecha) más moderno */
+.filter-select ion-select::part(icon) {
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+

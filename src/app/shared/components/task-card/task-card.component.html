@@ -1,0 +1,48 @@
+<ion-card [color]="completed  ? 'dark' : 'light'">
+  <ion-card-header>
+    <div class="header-left">
+      <ion-card-title>{{ title }}</ion-card-title>
+      <ion-chip *ngIf="subtitle" color="warning">{{ subtitle }}</ion-chip>
+    </div>
+    
+    <ion-button fill="clear" (click)="openMenu($event)">
+      <ion-icon [color]="completed  ? 'light' : 'dark'" [icon]="ellipsisHorizontalIcon"></ion-icon>
+    </ion-button>
+
+    <ion-popover 
+      [isOpen]="menuOpen" 
+      [event]="menuEvent" 
+      (didDismiss)="menuOpen = false">
+      <ng-template>
+        <ion-list>
+          <ion-item button *ngIf="action1Label" (click)="edit()">
+            <ion-label>{{ action1Label }}</ion-label>
+          </ion-item>
+
+          <ion-item button *ngIf="action2Label" (click)="delete()" color="danger">
+            <ion-label>{{ action2Label }}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ng-template>
+    </ion-popover>
+
+   
+  </ion-card-header>
+
+  <ion-card-content *ngIf="content">
+    {{ content }}
+  </ion-card-content>
+
+  <div class="toggle" *ngIf="showToggle">
+    <span>{{ completed  ? 'Completado:' : 'Pendiente:' }}</span>
+
+  <ion-toggle  
+    
+    aria-label="Success toggle" 
+    color="success"
+    [checked]="completed "
+    (ionChange)="onToggleChange($event)"
+  ></ion-toggle>
+  </div>
+   
+</ion-card>

@@ -1,0 +1,40 @@
+<app-task-modal
+  titleTask="Crea una nueva tarea"
+
+  (cancelled)="cancel()"
+>
+
+  <div class="modal-body">
+
+    <form class="task-form">
+
+        <ion-item>
+            <ion-input label="Nombre de la tarea" labelPlacement="floating" placeholder="Nombre de la tarea" [(ngModel)]="taskName" name="title"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input label="Descripción" labelPlacement="floating" placeholder="Descripción" [(ngModel)]="taskDescription" name="description"></ion-input>
+        </ion-item>
+
+
+      <div class="category-buttons">
+        <app-category-filter
+        [placeholder]="'Seleccionar categoría'"
+        [categories]="categories"
+        (selectedChange)="taskCategory = $event"
+        
+        ></app-category-filter>
+
+      
+      </div>
+
+    </form>
+
+    <div class="button-row">
+      <ion-button (click)="cancel()" fill="clear" >Cancelar</ion-button>
+      <ion-button fill="solid" color="primary" (click)="saveTask()">Guardar</ion-button>
+    </div>
+
+  </div>
+
+</app-task-modal>
