@@ -91,15 +91,13 @@ A continuación se presenta una tabla con todos los requerimientos de la prueba 
 
 Nota: La prueba originalmente solicitaba configurar el proyecto con Cordova, pero debido a incompatibilidades con las versiones actuales de Android y herramientas modernas de compilación, opte por Capacitor, que es el stack oficial y recomendado por Ionic.
 
-Video Demostrtico TaskMaster:
+Video Demostrativo TaskMaster:
 
-
-
-
+https://github.com/user-attachments/assets/bdf4d859-a706-454f-baf5-dc578bc87526
 
 La aplicación está organizada siguiendo una arquitectura modular y escalable, inspirada en principios de Clean Architecture, dividiendo responsabilidades en capas claras:
-
-src/
+```txt
+   src/
 └── app/
     ├── core/
     │   └── storage/
@@ -131,7 +129,7 @@ src/
             ├── task-card/                  # Card reutilizable para mostrar tareas.
             ├── category-filters/           # Filtros reutilizables por categoría.
             └── task-modal/                 # Modal reutilizable para acciones rápidas.
-
+```
 
 Instalar dependencia:
 
